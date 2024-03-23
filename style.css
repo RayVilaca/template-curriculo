@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #636766;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: .5s;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+}
+
+.container .left_side {
+    position: relative;
+    background: #0A0A08;
+    padding: 40px;
+}
+
+.profile_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile_text .img_bx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile_text .img_bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+.profile_text h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile_text h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.contact_info {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact_info ul {
+    position: relative;
+}
+
+.contact_info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact_info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    /* Cor dos icones de contato */
+    color: #3ef7ed;
+}
+
+.contact_info ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact_info ul li a {
+    text-decoration: none;
+}
+
+.contact_info.education li {
+    margin-bottom: 15px;
+}
+
+.contact_info.education h5 {
+    /* Cor do ano de ingreso e saída em formação */
+    color: #3ef7ed;
+    font-weight: 500;
+}
+
+.contact_info.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact_info.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact_info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contact_info.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* Cor das barras de progresso em idiomas */
+    background: #3ef7ed;
+}
+
+.container .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    transition: .8s;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    /* Cor dos títulos */
+    color: #104643;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    /* Cor nome do cargo em experiência */
+    color: #1f7a76;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+      /* Cor das barras de progresso em habilidades */
+    background: #3ef7ed;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.interest ul li .fa {
+    color: #3ef7ed;
+    font-size: 18px;
+    width: 20px;
+}
+
+.container .right_side h1 {
+    color: #3ef7ed;
+}
+
+.trilho {
+    width: 60px;
+    height: 30px;
+    background-color: #848c90;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trilho .indicador i {
+    font-size: 20px;
+}
+
+.light-dark-mode {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.trilho.dark {
+    background-color: #d4d4d4;
+}
+
+.trilho.dark .indicador{
+    left: 30px;
+    background-color: #081921;
+}
+
+.trilho.dark .indicador i {
+    color: #fff;
+}
+
+body.dark {
+    background-color: #505352;
+}
+
+body.dark .container .right_side {
+    background-color: #333333;
+    color: #fff;
+}
+
+body.dark .container .right_side h1 {
+    color: #0A0A08;
+}
+
+body.dark .title2 {
+    color: #fff;
+}
+
+body.dark p {
+    color: #fff;
+}
+
+body.dark .about .box .text h4 {
+    color: #fff
+}
+
+body.dark .skills .box h4 {
+    color: #d4d4d4;
+}
+
+body.dark .about .box .year_company h5 {
+    color: #d4d4d4;
+}
+
+body.dark .interest ul li {
+    color: #d4d4d4;
+}
+
+@media not print {
+
+    @media (max-width: 1080px) {
+        .container {
+            margin: 10px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .interest ul {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .about .box {
+            flex-direction: column;
+        }
+        .about .box .year_company {
+            margin-bottom: 5px;
+        }
+        .interest ul {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .skills .box {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+}
+
+@media print {
+
+    @page {
+        margin: 10px;
+    }
+
+    body{
+        -webkit-print-color-adjust:exact !important;
+        print-color-adjust:exact !important;
+    }
+    
+    .container {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        min-height: 100%;
+    }
+
+    .container .left_side {
+        font-size: 14px;
+        padding: 60px 20px 40px 20px;
+    }
+
+    .container .right_side {
+        font-size: 12px;
+    }
+
+    .container ~ * {
+        display: none;
+    }
+
+    .contact_info {
+        padding-top: 20px;
+    }
+
+    .contact_info ul li .text {
+        font-size: 12px;
+    }
+
+    .contact_info ul li .icon {
+        width: 20px;
+        font-size: 16px;
+    }
+
+    .about {
+        margin-bottom: 20px;
+    }
+
+    .title2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .about .box .text h4 {
+        font-size: 14px;
+    }
+
+    .about .box .year_company h5 {
+        font-size: 12px;
+    }
+
+    .about .box .year_company p {
+        font-size: 10px;
+    }
+
+    .about .box {
+        margin: 8px 0;
+    }
+
+    .interest {
+        display: none;
+    }
+
+    .light-dark-mode {
+        display: none;
+    }
+
+    .profile_text .img_bx {
+        width: 140px;
+        height: 140px;
+    }
+
+    .title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .profile_text h2 {
+        letter-spacing: -1px;
+    }
+
+/* 
+    body {
+        visibility: hidden;
+    }
+    #section-to-print {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+    } */
+}
